@@ -15,11 +15,12 @@
     <mat-card-content>
       <ul>
         <li *ngFor = 'let  quote of   quotes'>
-          <p> From: <br>{{   quote.name }}</p>
+          <p> Submitted by: <br>{{   quote.name }}</p>
     
          {{ quote.lists }}
-         <p>Quoted By:</p>
+         <p>Quoted By: {{ quote.author }}</p>
          <mat-card-actions>
+          <app-display-detail [quote] ='quote'></app-display-detail>
           <button mat-button><i class="fas fa-thumbs-up"></i></button>
           <button mat-button><i class="fas fa-thumbs-down"></i></button>
         </mat-card-actions>
