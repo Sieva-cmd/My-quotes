@@ -14,18 +14,20 @@
     <img mat-card-image src="../assets/images/logo.png" alt="Photo of a Shiba Inu">
     <mat-card-content>
       <ul>
-        <li *ngFor = 'let  quote of   quotes'>
+        <li *ngFor = 'let  quote of   quotes let i =index'>
           <p> Submitted by: <br>{{   quote.name }}</p>
     
          {{ quote.lists }}
          <p>Quoted By: {{ quote.author }}</p>
          <mat-card-actions>
           <app-display-detail [quote] ='quote'></app-display-detail>
-          <button mat-button><i class="fas fa-thumbs-up"></i></button>
-          <button mat-button><i class="fas fa-thumbs-down"></i></button>
+          <p id="likes">{{ numberOfLikes }} <span id="dislikes">{{ numberOfDislikes }}</span></p>
+          
+          <button mat-button class="btn btn-success" (click)="likeButtonClick()"><i class="fas fa-thumbs-up"></i>Like</button>
+          <button mat-button (click) ="dislikeButtonClick()" ><i class="fas fa-thumbs-down">Dislike</i></button>
         </mat-card-actions>
         </li>
-      </ul>
+      </ul> 
     
        
       
