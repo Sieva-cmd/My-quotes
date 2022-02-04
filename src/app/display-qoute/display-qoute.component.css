@@ -21,13 +21,9 @@ ul li{
     border-radius: 5px;
     list-style: none;
 }
-p{
-    /* margin-left: -300px; */
+#name{
     color: brown;
 }
-#likes{
-    margin-left: 50px;
-}
-#dislikes{
-    margin-left: 60px;
+#authorName{
+    color: brown;
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Quotes } from '../quotes';
 
 @Component({
@@ -7,12 +7,26 @@ import { Quotes } from '../quotes';
   styleUrls: ['./display-detail.component.css']
 })
 export class DisplayDetailComponent implements OnInit {
-  // details: Detail[] = [
-  //   {author:'martin Luther',upvote:'',downvote:''},
-
-  // ]
+ 
 
   @Input() quote!:Quotes;
+  @Output() isComplete = new EventEmitter<boolean>();
+
+  numberOfLikes :number = 1;
+  numberOfDislikes :number =0;
+
+  likeButtonClick(index:any){
+this.numberOfLikes++;
+
+  }
+  dislikeButtonClick(index:any){    
+this.numberOfDislikes++;
+
+  }
+
+  deleteQuote(complete:boolean){
+    this.isComplete.emit(complete);
+  }
 
   constructor() { }
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { Quotes } from '../quotes';
 
 @Component({
@@ -12,14 +12,10 @@ export class DisplayQouteComponent implements OnInit {
     {id:2, name:'Brian Githinji',lists:'Common sense is not a gift, it`s a punishment because you have to deal with everyone who deesnt have it', author:'Nelson Madela',upvote:'',downvote:' '},
   ]
 
-  numberOfLikes :number = 1;
-  numberOfDislikes :number =0;
+  
 
-  likeButtonClick(){
-this.numberOfLikes++;
-  }
-  dislikeButtonClick(){
-this.numberOfDislikes--;
+  deleteQuote(isComplete:any, index:any){
+this.quotes.splice(index,1);
   }
 
 

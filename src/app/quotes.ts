@@ -5,4 +5,10 @@ export class Quotes {
     author!:string;
     upvote!:string;
     downvote!:string;
-}
+
+  
+     }
+  
+    
+
+

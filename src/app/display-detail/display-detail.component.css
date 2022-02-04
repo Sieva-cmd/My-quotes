@@ -1,6 +1,20 @@
 span{
     margin-left: 40px;
 }
+
+button{
+    color: blue;
+    margin-left: 40px;
+    border-radius: 5px;
+    border: none;
+}
 p{
-    margin-left: 15px;
+    /* margin-left: -300px; */
+    color: brown;
+}
+#likes{
+    margin-left: 50px;
+}
+#dislikes{
+    margin-left: 60px;
 }

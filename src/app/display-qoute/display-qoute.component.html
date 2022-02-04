@@ -14,17 +14,16 @@
     <img mat-card-image src="../assets/images/logo.png" alt="Photo of a Shiba Inu">
     <mat-card-content>
       <ul>
-        <li *ngFor = 'let  quote of   quotes let i =index'>
-          <p> Submitted by: <br>{{   quote.name }}</p>
+        <li *ngFor = 'let  quote of   quotes; let i =index'>
+          <p id="name"> Submitted by: <br>{{   quote.name }}</p>
     
          {{ quote.lists }}
-         <p>Quoted By: {{ quote.author }}</p>
+         <p id="authorName">Quoted By: {{ quote.author }}</p>
          <mat-card-actions>
-          <app-display-detail [quote] ='quote'></app-display-detail>
-          <p id="likes">{{ numberOfLikes }} <span id="dislikes">{{ numberOfDislikes }}</span></p>
-          
-          <button mat-button class="btn btn-success" (click)="likeButtonClick()"><i class="fas fa-thumbs-up"></i>Like</button>
-          <button mat-button (click) ="dislikeButtonClick()" ><i class="fas fa-thumbs-down">Dislike</i></button>
+
+         
+   
+          <app-display-detail [quote] ='quote'(isComplete) ='deleteQuote ($event,i)' ></app-display-detail>
         </mat-card-actions>
         </li>
       </ul> 

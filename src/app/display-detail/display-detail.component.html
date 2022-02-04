@@ -1,2 +1,5 @@
-<p> {{ quote.upvote }}  <span> {{ quote.downvote }}</span> </p>
 
+ <p id="likes">{{ numberOfLikes }} <span id="dislikes">{{ numberOfDislikes }}</span></p>
+<button mat-button class="btn btn-success" (click)="likeButtonClick(true)"><i class="fas fa-thumbs-up"></i>Like</button>
+<button mat-button (click)="dislikeButtonClick(true)"><i class="fas fa-thumbs-down">Dislike</i></button>
+<button (click)='deleteQuote(true)'>Delete Quote</button>
