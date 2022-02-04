@@ -7,10 +7,12 @@ import {MatCardModule} from '@angular/material/card';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DisplayQouteComponent } from './display-qoute/display-qoute.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DisplayQouteComponent
   ],
   imports: [
     BrowserModule,
