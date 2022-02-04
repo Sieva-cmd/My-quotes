@@ -4,36 +4,33 @@
   <Div class="row">
     <h1>DAILY QOUTES</h1>
     <h2>Get a touch of Our daily qoutes</h2>
-<Div class="card" style="width: 30rem;">
-  <mat-card class="example-card">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Qoutes</mat-card-title>
-      <mat-card-subtitle>Inspirational  And motivational quotes</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src="../assets/images/logo.png" alt="Photo of a Shiba Inu">
-    <mat-card-content>
-      <ul>
-        <li *ngFor = 'let  quote of   quotes; let i =index'>
-          <p id="name"> Submitted by: <br>{{   quote.name }}</p>
-    
-         {{ quote.lists }}
-         <p id="authorName">Quoted By: {{ quote.author }}</p>
-         <mat-card-actions>
+    <Div class="card" style="width: 30rem;">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Qoutes</mat-card-title>
+          <mat-card-subtitle>Inspirational And motivational quotes</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../assets/images/logo.png" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <ul>
+            <li *ngFor='let  quote of   quotes; let i =index'>
+              <p id="name"> Submitted by: <br>{{ quote.name }}</p>
+              <p appChangeBackgroundColor>{{ quote.lists }}</p>
 
-         
-   
-          <app-display-detail [quote] ='quote'(isComplete) ='deleteQuote ($event,i)' ></app-display-detail>
-        </mat-card-actions>
-        </li>
-      </ul> 
-    
-       
-      
-    </mat-card-content>
-  
-  </mat-card>
-</Div>
-    
+              <p id="authorName">Quoted By: {{ quote.author }}</p>
+              <mat-card-actions>
+                <app-display-detail [quote]='quote' (isComplete)='deleteQuote ($event,i)'></app-display-detail>
+              </mat-card-actions>
+            </li>
+          </ul>
+
+
+
+        </mat-card-content>
+
+      </mat-card>
+    </Div>
+
   </Div>
 </Div>

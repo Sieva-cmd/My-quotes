@@ -3,10 +3,6 @@ export class Quotes {
     name!:string;
     lists!:string;
     author!:string;
-    upvote!:string;
-    downvote!:string;
-
-  
      }
   
     
