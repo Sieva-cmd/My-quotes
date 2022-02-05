@@ -10,21 +10,25 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DisplayQouteComponent } from './display-qoute/display-qoute.component';
 import { DisplayDetailComponent } from './display-detail/display-detail.component';
 import { ChangeBackgroundColorDirective } from './change-background-color.directive';
+import { FormComponent } from './form/form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     DisplayQouteComponent,
     DisplayDetailComponent,
-    ChangeBackgroundColorDirective
+    ChangeBackgroundColorDirective,
+    FormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSliderModule,
-    MatCardModule
-    // MatCardHarness
+    MatCardModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
