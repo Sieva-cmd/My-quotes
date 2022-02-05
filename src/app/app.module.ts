@@ -12,6 +12,7 @@ import { DisplayDetailComponent } from './display-detail/display-detail.componen
 import { ChangeBackgroundColorDirective } from './change-background-color.directive';
 import { FormComponent } from './form/form.component';
 import { FormsModule } from '@angular/forms';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     DisplayQouteComponent,
     DisplayDetailComponent,
     ChangeBackgroundColorDirective,
-    FormComponent
+    FormComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,

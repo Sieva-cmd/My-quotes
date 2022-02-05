@@ -8,8 +8,8 @@ import { Quotes } from '../quotes';
 })
 export class DisplayQouteComponent implements OnInit {
   quotes:Quotes[] =[
-  new Quotes  (1, 'Sieva Lucia','Every pain gives a lesson and every lesson changes a person','Martin Luther'),
- new Quotes (2, 'Brian Githinji','Common sense is not a gift, it`s a punishment because you have to deal with everyone who deesnt have it', 'Nelson Madela'),
+  new Quotes  (1, 'Sieva Lucia','Every pain gives a lesson and every lesson changes a person','Martin Luther', new Date(2022,2,13)),
+ new Quotes (2, 'Brian Githinji','Common sense is not a gift, it`s a punishment because you have to deal with everyone who deesnt have it', 'Nelson Madela',new Date(2022,3,14)),
   ]
 
   
