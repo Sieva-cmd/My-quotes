@@ -27,6 +27,17 @@ Am a full stack  developer.
 |Displays number of </br> upvotes and downvote| add 1 like or 1 dislike|displays more likes and more dislikes |
 |:----------------------------------------------------------------------:|:----------------:|:-------:|:--------------:|
 
+## set up instructions
+-  Go to  Github  using the Link provided.
+-  Copy repository link in the Code section
+-  Clone it to your local machine Using the repository link.
+- open your terminal 
+- cd to your project folder
+- if you don't have a folder cd Documents and mkdir myProject
+- cd myProject and write the command below to clone repository
+- git clone https://github.com/Sieva-cmd/My-quotes.git
+- you already have the Quotes application in your local machine
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
