@@ -1,0 +1,23 @@
+
+
+
+form input{
+    width: 300px;
+    margin-top: 20px;
+    height: 30px;
+    margin-left: 40px;
+}
+
+#quote{
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+button{
+    margin-top: 40px;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    color: blue;
+}
