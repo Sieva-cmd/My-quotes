@@ -4,43 +4,54 @@
     <img mat-card-image src="../assets/images/logo2.png" alt="Photo of a Shiba Inu">
     <mat-card-content>
 
-        <form (ngSubmit) = 'submitQuote()' #appForm = 'ngForm'>
+        <form (ngSubmit)='submitQuote()' #appForm='ngForm'>
             <div class="form-group">
 
                 <label for="name"> Your Name</label> <br>
-                <input type="text" required class="form-control" id="name" [(ngModel)] ="newQuote.name" #name ='ngModel' name="name" required>
-        
+                <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" #name='ngModel'
+                    name="name" required>
+                <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+                    <p>Please Enter your name</p>
 
-                <!-- Testing to see if we get any data -->
-                <!-- Display {{newGoal.name}} -->
-            </div>
-            <div class="form-group">
 
-                <label for="description">Type in your qoute</label> <br>
-                <textarea class="form-control" id="quote" rows="4" [(ngModel)] ="newQuote.lists" name ="lists" #lists ='ngModel' required></textarea>
-               
-
-            </div>
-            <div class="form-group">
-
-                <label for="name"> Authors Name</label> <br>
-                <input type="text" required class="form-control" id="author"  [(ngModel)] ="newQuote.author" name = "author" #author ="ngModel" required name="name">
+                    <!-- Testing to see if we get any data -->
+                    <!-- Display {{newGoal.name}} -->
+                </div>
                 <div class="form-group">
 
-                    <label for="complete">Date Submitted</label> <br>
-                    <input type='date' id="complete" required [(ngModel)] ="newQuote.submittedDate" name ="submittedDate" #submittedDate ="ngModel" required> 
+                    <label for="description">Type in your qoute</label> <br>
+                    <textarea class="form-control" id="quote" rows="4" [(ngModel)]="newQuote.lists" name="lists"
+                        #lists='ngModel' required></textarea>
+                    <div [hidden]="lists.valid || lists.pristine" class="alert alert-danger">
+                        <p>Please type in your quote</p>
 
+
+                    </div>
+                    <div class="form-group">
+
+                        <label for="name"> Authors Name</label> <br>
+                        <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author"
+                            name="author" #author="ngModel" required name="name">
+                        <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+                            <p>Insert the Authors name</p>
+                            <div class="form-group">
+
+                                <label for="complete">Date Submitted</label> <br>
+                                <input type='date' id="complete" required [(ngModel)]="newQuote.submittedDate"
+                                    name="submittedDate" #submittedDate="ngModel" required>
+                                <div [hidden]="submittedDate.valid || submittedDate.pristine"
+                                    class="alert alert-danger">
+                                    <p>Date is required</p>
+
+                                </div>
+                                <button type="submit" class="btn btn-success">Submit Quote</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-success">Submit Quote</button>
             </div>
         </form>
     </mat-card-content>
-  
-    <!-- <mat-card-actions>
-      <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
-    </mat-card-actions> -->
-    <mat-card-footer>
-       
-    </mat-card-footer>
+
+    
 </mat-card>

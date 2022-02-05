@@ -1,6 +1,31 @@
 # Qoutes
+This is an application where you can read and add ispirational and motivational quotes that have been quoted out by prominent people.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
+
+#### By 
+- [sieva Lucia](https://github.com/Sieva-cmd)
+Am a full stack  developer.
+
+
+## website image
+![Website image](https://github.com/Sieva-cmd/My-quotes/blob/master/src/assets/images/webpage1.png)
+![Website image](https://github.com/Sieva-cmd/My-quotes/blob/master/src/assets/images/webpage2.png)
+
+
+## BDD
+|Behavior </br>Our program should haddle | Input Example </br>When it receives |Output Example </br> It should return |
+|:--------------------------------------:|:-----------------------------------:|:------------------------------------:|
+|An input  for the users Name| blank field |please enter your name |
+|:---------------------------------------------------------:|:--:|:---------:|
+|An input for the quote | blank field |please type in your quote|
+|:-------------------------------------------------------:|:--:|:-----------:|
+|An input for the Authors name|blank input | insert the Authors name |
+|:------------------:|:--:|:------------:|
+|An input for date|blank input | Date is required |
+|:------------------:|:--:|:------------:|
+|Displays number of </br> upvotes and downvote| add 1 like or 1 dislike|displays more likes and more dislikes |
+|:----------------------------------------------------------------------:|:----------------:|:-------:|:--------------:|
 
 ## Development server
 
