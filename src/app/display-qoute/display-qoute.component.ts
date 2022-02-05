@@ -18,6 +18,13 @@ export class DisplayQouteComponent implements OnInit {
 this.quotes.splice(index,1);
   }
 
+  addNewQuote(quote:any){
+let quoteLength = this.quotes.length;
+quote.id = quoteLength +1;
+quote.submittedDate = new Date(quote.submittedDate)
+this.quotes.push(quote)
+  }
+
 
   constructor() { }
 
