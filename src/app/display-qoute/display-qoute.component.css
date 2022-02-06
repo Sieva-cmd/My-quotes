@@ -33,6 +33,6 @@ ul li{
     flex-direction: row;
     justify-content: space-evenly;
 }
-h3{
+h3, .title{
     font-weight: bold;
 }

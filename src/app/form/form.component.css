@@ -21,3 +21,6 @@ button{
     border: none;
     color: blue;
 }
+.title{
+    font-weight: bold;
+}
