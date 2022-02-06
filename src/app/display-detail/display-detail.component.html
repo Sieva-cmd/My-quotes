@@ -1,7 +1,6 @@
-
 <p id="counter">{{ quote.submittedDate|dateCount }} days ago</p>
 
- <p id="likes">{{ numberOfLikes }} <span id="dislikes">{{ numberOfDislikes }}</span></p>
-<button mat-button class="btn btn-success" (click)="likeButtonClick(true)"><i class="fas fa-thumbs-up"></i>Like</button>
-<button mat-button (click)="dislikeButtonClick(true)"><i class="fas fa-thumbs-down">Dislike</i></button>
+<p id="likes">{{ numberOfLikes }} <span id="dislikes">{{ numberOfDislikes }}</span></p>
+<button mat-button class="btn btn-success" (click)="likeButtonClick(true)"><i class="fas fa-thumbs-up"></i>upvote</button>
+<button mat-button (click)="dislikeButtonClick(true)"><i class="fas fa-thumbs-down">Downvote</i></button>
 <button (click)='deleteQuote(true)'>Delete Quote</button>

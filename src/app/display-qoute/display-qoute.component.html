@@ -19,7 +19,7 @@
             <ul>
               <li *ngFor='let  quote of   quotes; let i =index'>
                 <p id="name"> Submitted by: <br>{{ quote.name }} on {{ quote.submittedDate|date|uppercase }}</p>
-                <p appChangeBackgroundColor>{{ quote.lists }}</p>
+                <h3 >{{ quote.lists }}</h3>
 
                 <p id="authorName">Quoted By: {{ quote.author }}</p>
                 <mat-card-actions>

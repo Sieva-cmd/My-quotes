@@ -8,12 +8,8 @@ import { DisplayDetailComponent } from './display-detail/display-detail.componen
 export class ChangeBackgroundColorDirective {
 
   constructor(private elem: ElementRef) {
-    const getArrayMax = (numberOfLikes: any) => {
-      return Math.max.apply(null, numberOfLikes);
-     
-    }
-    (<HTMLElement>this.elem.nativeElement).style.backgroundColor="pink";
- 
+   
+      (<HTMLElement>this.elem.nativeElement).style.backgroundColor="pink";
   
   }
 

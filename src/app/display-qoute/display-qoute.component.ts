@@ -1,5 +1,6 @@
 import { Component, OnInit} from '@angular/core';
 import { Quotes } from '../quotes';
+import { DisplayDetailComponent } from '../display-detail/display-detail.component';
 
 @Component({
   selector: 'app-display-qoute',
@@ -25,6 +26,20 @@ quote.submittedDate = new Date(quote.submittedDate)
 this.quotes.push(quote)
   }
 
+  // preNum!:number
+  // lastNum!:number
+  // counter!:number
+
+  // highestUpvote(){
+  //   this.preNum = 0
+  //   this.lastNum = 0
+
+  //   for(this.counter=1 ; this.counter < this.quotes.length; this.counter++) {
+  //     this.lastNum = this.quotes[this.counter].numberOfLikes;
+  //     if(this.lastNum > this.preNum){this.preNum = this.lastNum}
+  //   }
+  //   return  this.preNum
+  // }
 
   constructor() { }
 

@@ -1,3 +1,4 @@
+
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Quotes } from '../quotes';
 
@@ -15,6 +16,7 @@ export class DisplayDetailComponent implements OnInit {
   numberOfLikes :number = 1;
   numberOfDislikes :number =0;
 
+
   likeButtonClick(index:any){
 this.numberOfLikes++;
 
@@ -27,6 +29,11 @@ this.numberOfDislikes++;
   deleteQuote(complete:boolean){
     this.isComplete.emit(complete);
   }
+
+
+ 
+
+
 
   constructor() { }
 
