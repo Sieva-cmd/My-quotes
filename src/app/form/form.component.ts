@@ -13,6 +13,7 @@ submitQuote(){
   this.addQuote.emit(this.newQuote);
 }
 
+ path ='/assets/images/logoImage.png'
 
   constructor() { }
 
