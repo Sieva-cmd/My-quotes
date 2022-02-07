@@ -13,7 +13,7 @@ export class DisplayQouteComponent implements OnInit {
  new Quotes (2, 'Brian Githinji','Common sense is not a gift, it`s a punishment because you have to deal with everyone who deesnt have it', 'Nelson Madela',new Date(2022,1,14)),
   ]
 
-  
+  path ='/assets/images/logo.png';
 
   deleteQuote(isComplete:any, index:any){
 this.quotes.splice(index,1);
