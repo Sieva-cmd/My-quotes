@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Quotes {\n  constructor(id, name, lists, author, submittedDate) {\n    this.id = id;\n    this.name = name;\n    this.lists = lists;\n    this.author = author;\n    this.submittedDate = submittedDate;\n    this.numberOfLikes = 1;\n    this.numberOfDislikes = 0;\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}
